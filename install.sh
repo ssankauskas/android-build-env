@@ -1,4 +1,8 @@
 #!/bin/bash -l
+
+# Requirements: 
+# - Homebrew Installed
+
 DOT_FILE=~/.zshrc
 
 # Install Latest Grep(required for custom deploy scripts)
@@ -41,6 +45,16 @@ rvm use ruby --install --default
 
 # Install Bundler.io
 gem install bundler
+
+
+#-- Python
+brew install python2
+
+# Install Python Package Manager
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
+# Install Youtrack API Library
+pip install youtrack
 
 
 #-- Fin
