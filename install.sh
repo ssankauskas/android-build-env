@@ -5,12 +5,6 @@
 
 DOT_FILE=~/.zshrc
 
-# Install Latest Grep(required for custom deploy scripts)
-brew install grep
-if ! grep -q 'grep=ggrep' "$DOT_FILE"; then
-	echo 'alias grep=ggrep' >> $DOT_FILE
-fi
-
 #-- Java
 
 # OpenJDK 8
@@ -56,6 +50,11 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 # Install Youtrack API Library
 pip install youtrack
 
+
+#-- CLI Tools
+
+# Install ack
+brew install ack
 
 #-- Fin
 
